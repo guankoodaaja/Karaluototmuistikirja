@@ -1,4 +1,6 @@
 import styles from './Item.module.scss'
+import { MdNavigateNext } from 'react-icons/md'
+
 
 function Item() {
 
@@ -12,8 +14,12 @@ function Item() {
         <div className={styles.item_receiver}>Caruna Oy</div>
         <div className={styles.item_average}>145,83 €/kk</div>
       </div>
+      <div className={styles.item_edit}>
+        <MdNavigateNext />
+      </div>
     </div>
   )
+
 
 }
 
