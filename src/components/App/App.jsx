@@ -1,10 +1,9 @@
-import Menu from '../Menu'
-import Header from '../Header'
 import styles from './App.module.scss'
-import Item from '../Item'
 import Content from '../Content'
-import Button from '../../shared/buttons'
-
+import Header from '../Header'
+import Item from '../Item'
+import Menu from '../Menu'
+import { FloatingButton } from '../../shared/buttons'
 
 function App() {
 
@@ -17,13 +16,12 @@ function App() {
           <Item />
           <Item />
           <Item />
-          <Button>LISÄÄ UUSI RIVI</Button>
+          <FloatingButton secondary>+</FloatingButton>
         </Content>
         <Menu />
       </div>
     </>
   )
-
 }
 
 export default App
