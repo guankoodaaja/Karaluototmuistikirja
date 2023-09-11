@@ -2,7 +2,7 @@
 
 .menu {
   background-color: $color-neutral-darker;
-  color: $color-neutral-lighter;
+  color: $color-neutral-light;
   max-height: 4rem;
   min-height: 4rem;
   font-size: 2rem;
@@ -14,4 +14,12 @@
 .menu > div {
   display: flex;
   align-items: center;
+}
+
+.menu a {
+  color: $color-neutral-light;
+
+  &:global.active {
+    color: $color-neutral-lightest;
+  }
 }
