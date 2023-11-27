@@ -41,7 +41,7 @@ function ItemForm(props) {
         <div className={styles.itemform}>
           <div className={styles.itemform_row}>
             <div>
-              <label htmlFor='type'>Kulutyyppi</label>
+              <label htmlFor='type'>Tuotteen nimi</label>
               <select id='type' name='type' onChange={handleChange} value={values.type}>
                 <option value="">(valitse)</option>
                 { props.typelist.map(
@@ -72,7 +72,7 @@ function ItemForm(props) {
           </div>
           <div className={styles.itemform_row}>
             <div>
-              <label htmlFor='receiver'>Saaja</label>
+              <label htmlFor='receiver'>Kaupan nimi</label>
               <input id='receiver' type='text' name='receiver' onChange={handleChange} value={values.receiver} />
             </div>
           </div>
